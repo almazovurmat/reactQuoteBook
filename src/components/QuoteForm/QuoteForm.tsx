@@ -18,7 +18,6 @@ const QuoteForm: React.FC<IProps> = ({ quote, onSubmit }) => {
     useEffect(() => {
         if (quote) {
             setCreateOrUpdatedQuote(quote);
-            console.log(quote);
         }
     }, [quote]);
 
