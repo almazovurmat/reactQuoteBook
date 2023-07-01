@@ -1,6 +1,6 @@
 import React from 'react';
-import {CATEGORIES} from "../../categories";
 import {NavLink} from "react-router-dom";
+import {CATEGORIES} from "../../categories";
 
 const Categories = () => {
     return (
