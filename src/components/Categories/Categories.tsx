@@ -1,0 +1,39 @@
+import React from 'react';
+import {CATEGORIES} from "../../categories";
+import {NavLink} from "react-router-dom";
+
+const Categories = () => {
+    return (
+        <div className="card mb-4">
+            <div className="card-header">Categories</div>
+            <div className="card-body">
+                <div className="row">
+                    <div className="col-sm-6">
+                        <ul className="list-unstyled mb-0">
+                            {
+                                CATEGORIES.slice(0, Math.ceil(CATEGORIES.length / 2)).map(category => (
+                                    <li key={category.id}>
+                                        <NavLink to={'/'}>{category.title}</NavLink>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                    <div className="col-sm-6">
+                        <ul className="list-unstyled mb-0">
+                            {
+                                CATEGORIES.slice(Math.ceil(CATEGORIES.length / 2)).map(category => (
+                                    <li key={category.id}>
+                                        <NavLink to={'/'}>{category.title}</NavLink>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Categories;
