@@ -1,6 +1,5 @@
 import React from 'react';
 import {Outlet, Route, Routes} from "react-router-dom";
-import './App.css';
 import MainPage from "./containers/MainPage/MainPage";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
