@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
+import {useNavigate} from "react-router-dom";
 import {CATEGORIES} from "../../categories";
 import {IQuote} from "../../types";
-import {useNavigate} from "react-router-dom";
 
 interface IProps {
     quote?: IQuote;
