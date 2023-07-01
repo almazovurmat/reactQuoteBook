@@ -24,7 +24,7 @@ const QuoteCard: React.FC <IProps> = ({quote}) => {
                     <b className="card-text">{quote.author}</b>
                     <div className="mt-4">
                         <Link className="btn btn-primary" to={`/quotes/${quote.id}/edit`}>EDIT</Link>
-                        <a className="btn btn-danger mx-3" href="#!">DELETE</a>
+                        <Link className="btn btn-danger mx-3" to={`/quotes/${quote.id}/delete`}>DELETE</Link>
                     </div>
                 </div>
             </div>
