@@ -14,8 +14,6 @@ const QuoteCard: React.FC <IProps> = ({quote}) => {
     return (
         <>
             <div className="card mb-4">
-                {/*<a href="#!"><img className="card-img-top"*/}
-                {/*                  src={`http://placekitten.com/g/700/350/${quote.category}`} alt={quote.category}/></a>*/}
                 <div className="card-body">
                     <h2 className="card-title h4">
                         {getCategoryTitleById(quote.category)}
