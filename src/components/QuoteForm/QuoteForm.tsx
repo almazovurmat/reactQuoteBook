@@ -52,7 +52,7 @@ const QuoteForm: React.FC<IProps> = ({ quote, onSubmit }) => {
                     <div className="mb-3">
                         <label htmlFor="category" className="form-label">Category</label>
                         <select name="category" className="form-select" id="category" onChange={inputChange} defaultValue={createOrUpdatedQuote.category}>
-                            <option disabled>Выберите категорию</option>
+                            <option key="none" disabled>Выберите категорию</option>
                             {CATEGORIES.map((category) => (
                                 <option key={category.id}
                                         value={category.id}
