@@ -11,7 +11,7 @@ const Categories = () => {
                     <div className="col-sm-6">
                         <ul className="list-unstyled mb-0">
                             <li key="all">
-                                <NavLink to={`/quotes`}>All</NavLink>
+                                <NavLink to={`/quotes`}>Все цитаты</NavLink>
                             </li>
                             {
                                 CATEGORIES.slice(0, Math.ceil(CATEGORIES.length / 2)).map(category => (

@@ -72,7 +72,7 @@ const QuoteForm: React.FC<IProps> = ({ quote, onSubmit }) => {
                         <label htmlFor="text" className="form-label">Цитата</label>
                         <textarea name="text" className="form-control" id="text" rows={5} value={createOrUpdatedQuote.text} onChange={inputChange}></textarea>
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary my-5">{quote ? 'Отредактировать' : 'Добавить'}</button>
                 </form>
             </div>
         </>

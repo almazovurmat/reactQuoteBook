@@ -1,5 +1,5 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import axiosApi from "../../AxiosApi";
 import Loader from "../../components/Loader/Loader";
 import QuoteCard from "../../components/QuoteCard/QuoteCard";
@@ -47,9 +47,10 @@ const QuotesByCategory = () => {
                     <div className="col-lg-8">
                         <div className="row">
                             {
+                                quotes.length > 0 ?
                                 quotes.map(quoteData => (
                                     <QuoteCard key={quoteData.id} quote={quoteData}/>
-                                ))
+                                )) : <h3>В этой категорий пока нет цитат, вы можете быть первый, нажмите <Link to={'/add-quote'}>сюда</Link></h3>
                             }
                         </div>
                     </div>

@@ -21,7 +21,9 @@ const AddQuote = () => {
     return (
         <>
             {loading && <Loader />}
-            <h4>Add new quote</h4>
+            <div className="w-75 mx-auto mb-4">
+                <h4>Добавить новую цитату</h4>
+            </div>
             <QuoteForm onSubmit={createNewQuote} />
         </>
     );

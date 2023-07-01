@@ -1,7 +1,7 @@
 export const CATEGORIES = [
-    {title: 'Star Wars', id: 'star-wars'},
-    {title: 'Famous people', id: 'famous-people'},
-    {title: 'Saying', id: 'saying'},
-    {title: 'Humour', id: 'humour'},
-    {title: 'Motivational', id: 'motivational'},
+    {title: 'Звездные войны', id: 'star-wars'},
+    {title: 'Знаменитые люди', id: 'famous-people'},
+    {title: 'Высказывания', id: 'saying'},
+    {title: 'Юмор', id: 'humour'},
+    {title: 'Мотивация', id: 'motivational'},
 ];

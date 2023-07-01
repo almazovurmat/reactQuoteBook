@@ -46,7 +46,9 @@ const QuoteEdit = () => {
     return (
         <>
             {loading && <Loader />}
-            <h4>Edit quote</h4>
+            <div className="w-75 mx-auto mb-4">
+                 <h4>Редактировать цитату</h4>
+             </div>
             <QuoteForm quote={quote} onSubmit={onSubmit} />
         </>
     );
