@@ -57,7 +57,6 @@ const MainPage = () => {
                 </div>
             </div>
         </>
-
     );
 };
 
