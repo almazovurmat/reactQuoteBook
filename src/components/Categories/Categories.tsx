@@ -5,7 +5,7 @@ import {CATEGORIES} from "../../categories";
 const Categories = () => {
     return (
         <div className="card mb-4">
-            <div className="card-header">Categories</div>
+            <div className="card-header">Категории</div>
             <div className="card-body">
                 <div className="row">
                     <div className="col-sm-6">
