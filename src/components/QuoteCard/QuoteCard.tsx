@@ -1,6 +1,6 @@
 import React from 'react';
-import {IQuoteWithID} from "../../types";
 import {Link} from "react-router-dom";
+import {IQuoteWithID} from "../../types";
 import {CATEGORIES} from "../../categories";
 
 interface IProps {
