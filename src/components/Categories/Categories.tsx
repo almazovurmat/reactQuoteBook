@@ -10,10 +10,13 @@ const Categories = () => {
                 <div className="row">
                     <div className="col-sm-6">
                         <ul className="list-unstyled mb-0">
+                            <li key="all">
+                                <NavLink to={`/quotes`}>All</NavLink>
+                            </li>
                             {
                                 CATEGORIES.slice(0, Math.ceil(CATEGORIES.length / 2)).map(category => (
                                     <li key={category.id}>
-                                        <NavLink to={'/'}>{category.title}</NavLink>
+                                        <NavLink to={`/quotes/${category.id}`}>{category.title}</NavLink>
                                     </li>
                                 ))
                             }
@@ -24,7 +27,7 @@ const Categories = () => {
                             {
                                 CATEGORIES.slice(Math.ceil(CATEGORIES.length / 2)).map(category => (
                                     <li key={category.id}>
-                                        <NavLink to={'/'}>{category.title}</NavLink>
+                                        <NavLink to={`/quotes/${category.id}`}>{category.title}</NavLink>
                                     </li>
                                 ))
                             }
